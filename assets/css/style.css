@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #420842;
+  color: #111;
+}
+
+/*==========================================
+
+==========================================*/
+.first-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section .box-conn {
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0 20px;
+  box-shadow: 5px 5px 5px 1px #00000014;
+}
+
+.first-section .box-conn .top {
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 1px solid #999;
+}
+
+.first-section .box-conn .bottom {
+  padding: 20px 0;
+}
+
+.first-section .box-conn .bottom li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.first-section .box-conn .bottom button {
+  min-width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  margin: 20px 5px 0 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+  background-color: #420842;
+}
+
+.first-section .box-conn .bottom button:hover {
+  transform: scale(0.95);
+}
+
+/*==========================================
+
+==========================================*/
+.second-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.second-section .box-conn {
+  width: 400px;
+}
+
+.second-section .box-conn .top {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  position: relative;
+}
+
+.second-section .box-conn .top > div {
+  width: 48%;
+  font-size: 35px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.second-section .box-conn .top > div:last-child {
+  color: #420842;
+}
+
+.second-section .box-conn .top > .mover {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 60px;
+  transition: 0.5s;
+  background-color: #420842;
+}
+
+/*  */
+.second-section .box-conn .top.active > .mover {
+  left: calc(100% - 50%);
+}
+.second-section .box-conn .top.active > div {
+  color: #420842;
+}
+.second-section .box-conn .top.active > div:last-child {
+  color: #fff;
+}
+/*  */
+
+.second-section .box-conn .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.second-section .box-conn .bottom > div {
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+  margin: 3px 0;
+  background-color: #fff;
+  font-size: 75px;
+  display: flex;
+  font-weight: 500;
+  color: #420842;
+  align-items: center;
+  justify-content: center;
+}
+
+/*==========================================
+
+============================================*/
+.third-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.third-section .box-conn {
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.third-section .box-conn li {
+  font-size: 40px;
+  list-style: none;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.third-section .box-conn button {
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.2s;
+  background-color: #420842;
+}
+
+.third-section .box-conn button:hover {
+  transform: scale(0.95);
+}
+
+/*==========================================
+
+============================================*/
+.display-none {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}
